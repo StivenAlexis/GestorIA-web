@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 118" fill="none" role="img" aria-label="GestorIA">
+  <!-- Isotipo GestorIA — versión vectorial limpia.
+       Un único trazo continuo dibuja la G completa (arranca en el nodo superior
+       derecho, recorre el círculo y termina en el nodo central). Los nodos son
+       discos soldados al trazo y la máscara perfora sus centros, de modo que
+       ningún empalme puede quedar desconectado. -->
+  <defs>
+    <linearGradient id="gia-arc" x1="14" y1="26" x2="66" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10D6C2"/>
+      <stop offset="0.5" stop-color="#05C9C5"/>
+      <stop offset="1" stop-color="#00B0C0"/>
+    </linearGradient>
+    <linearGradient id="gia-bar" x1="50" y1="56.1" x2="66" y2="56.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7BCF4D"/>
+      <stop offset="1" stop-color="#19C9A5" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="gia-holes">
+      <rect width="92" height="118" fill="#fff"/>
+      <circle cx="72.8" cy="24.9" r="3.4" fill="#000"/>
+      <circle cx="23.5" cy="82.5" r="3.2" fill="#000"/>
+      <circle cx="47.8" cy="56.1" r="3.3" fill="#000"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#gia-holes)">
+    <!-- Trazo continuo: nodo superior derecho → arco completo → barra → nodo central -->
+    <path d="M 72.8 24.9
+             C 70.2 22.8, 66 24.3, 62.9 22.9
+             A 36.5 36.5 0 1 0 83.4 62.3
+             C 83.9 59.3, 81 56.1, 78 56.1
+             L 47.8 56.1"
+          stroke="url(#gia-arc)" stroke-width="8.5"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Transición a verde de la barra al acercarse al nodo central -->
+    <path d="M 47.8 56.1 L 64 56.1"
+          stroke="url(#gia-bar)" stroke-width="8.5" stroke-linecap="round"/>
+    <!-- Nodos: discos que la máscara convierte en anillos -->
+    <circle cx="72.8" cy="24.9" r="7" fill="#0BC2C0"/>
+    <circle cx="23.5" cy="82.5" r="7.7" fill="#05CFC5"/>
+    <circle cx="47.8" cy="56.1" r="7" fill="#8DCC35"/>
+  </g>
+</svg>
