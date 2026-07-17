@@ -11,22 +11,20 @@ assets/
   script.js           i18n, animaciones de scroll, año del footer
   logo-gestoria.png   Isotipo oficial (usado en header, footer y favicon)
   logo-gestoria.svg   Versión vectorial aproximada (no se usa; disponible como alternativa)
-privacidad/           Política de Privacidad (ES) — contenido legal pendiente
-privacy/              Privacy Policy (EN) — contenido legal pendiente
-terminos/             Términos de Uso (ES) — contenido legal pendiente
-terms/                Terms of Use (EN) — contenido legal pendiente
+privacidad/           Política de Privacidad (ES)
+privacy/              Privacy Policy (EN)
+terminos/             Términos de Uso (ES)
+terms/                Terms of Use (EN)
 ```
 
-## Pendientes antes de publicar
+Contacto: WhatsApp `+54 9 362 418-2059` (número real de GestorIA) y `contacto@gestoriacore.com.ar`.
 
-1. **Número de WhatsApp**: reemplazar `549XXXXXXXXXX` en `index.html` (3 ocurrencias: header, hero y contacto). Formato internacional, sin `+`, sin espacios ni guiones.
-2. **Contenido legal**: reemplazar los placeholders "Contenido legal pendiente de incorporar" en las 4 páginas legales con el texto legal definitivo, y quitar el `<meta name="robots" content="noindex">` de esas páginas cuando estén completas.
+## Publicar en GitHub Pages / Cloudflare Pages
 
-## Publicar en GitHub Pages
-
-1. Subir el repo a GitHub.
+1. Subir el repo a GitHub (ya hecho: `github.com/StivenAlexis/GestorIA-web`).
 2. En *Settings → Pages*, elegir **Deploy from a branch**, rama `main`, carpeta `/ (root)`.
-3. El sitio usa rutas relativas, así que funciona tanto en `usuario.github.io/repo/` como con dominio propio.
+3. Conectar el dominio propio `gestoriacore.com.ar` (ya delegado a Cloudflare) apuntando al host que se elija.
+4. El sitio usa rutas relativas, así que funciona tanto en `usuario.github.io/repo/` como con dominio propio.
 
 ## Notas de seguridad
 
